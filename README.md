@@ -22,3 +22,5 @@
             Constructors, getters/setters, toString
         PessoaFísica.java
             extended Pessoa
+#### MINOR
+    Formatted GlobalFlags and ErrorHandler to specification.

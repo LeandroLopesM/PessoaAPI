@@ -36,7 +36,7 @@ public abstract class Pessoa {
 
     @Override
     public String toString() {
-        return "%s:%s:%s@".formatted(name, dateOfBirth.toEpochDay(), dateOfBirth, address.toString() );
+        return "%s:%s:%s@%s".formatted(name, dateOfBirth.toEpochDay(), dateOfBirth, address.toString() );
     }
 
     /***********************\
