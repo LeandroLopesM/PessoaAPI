@@ -25,11 +25,6 @@ public abstract class Pessoa {
 
     public Pessoa() {}
 
-    public Pessoa withAddress( String road, String neighborhood, String city, String state, int cep ) {
-        address = new Endereço( road, neighborhood, city, state, cep );
-        return this;
-    }
-
     /***************\
      *  OVERRIDES  *
     \***************/
@@ -46,8 +41,10 @@ public abstract class Pessoa {
     public String    getCPF() { return CPF; }
     public String    getName() { return name; }
     public LocalDate getDateOfBirth() { return dateOfBirth; }
+    public Endereço getAddress() { return address; }
 
     public void setCPF(String cPF) { CPF = cPF; }
     public void setName(String name) { this.name = name; }
     public void setDateOfBirth(LocalDate dateOfBirth) { this.dateOfBirth = dateOfBirth; }
+    public void setAddress( String road, String neighborhood, String city, String state, int cep ) { address = new Endereço( road, neighborhood, city, state, cep ); }
 }

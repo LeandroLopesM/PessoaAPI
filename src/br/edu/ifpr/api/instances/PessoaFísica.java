@@ -11,4 +11,8 @@ public class PessoaFísica extends Pessoa {
     }
     
     
+    public PessoaFísica withAddress( String road, String neighborhood, String city, String state, int cep ) {
+        setAddress( road, neighborhood, city, state, cep );
+        return this;
+    }
 }
